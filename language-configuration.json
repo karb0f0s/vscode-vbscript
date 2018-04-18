@@ -24,7 +24,7 @@
         ["\"", "\""]
     ],    
     "indentationRules": {
-        "increaseIndentPattern": "^\\s*(\\b([Cc]lass|[Ee]lse([Ii]f)?|[Ff]or|[Ss]elect|[Cc]ase)\\b|\\b([Ii]f)\\b.*\\b([Tt]hen)\\s*$|(([Pp]ublic|[Pp]rivate)\\s*([Dd]efault)?\\s*([Pp]roperty|[Ss]ub|[Ff]unction)))\\b.*$",
+        "increaseIndentPattern": "(^\\s*(\\b([Cc]lass|[Ee]lse([Ii]f)?|[Ff]or|[Ss]elect|[Cc]ase)\\b|\\b([Ii]f)\\b.*\\b([Tt]hen)\\s*$)|\\b([Pp]roperty|[Ss]ub|[Ff]unction))\\b.*$",
         "decreaseIndentPattern": "^\\s*([Ee]nd|[Ee]lse([Ii]f)?|[Cc]ase|[Nn]ext|[Ll]oop)\\b"
     }
 }
