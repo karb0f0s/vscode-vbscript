@@ -1,41 +1,54 @@
 {
-  "name": "vbscript",
-  "displayName": "VBScript",
-  "description": "VBScript Language Support",
-  "version": "0.5.0",
-  "publisher": "karb0f0s",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/karb0f0s/vscode-vbscript.git"
-  },
-  "engines": {
-    "vscode": "^1.14.0"
-  },
-  "categories": [
-    "Languages",
-    "Snippets"
-  ],
-  "contributes": {
-    "languages": [
-      {
-        "id": "vbs",
-        "aliases": ["VBScript","vbs"],
-        "extensions": [".vbs",".vba",".bas",".vbe",".wsf",".wsc",".acm",".acr",".acf"],
-        "configuration": "./language-configuration.json"
-      }
+    "name": "vbscript",
+    "displayName": "VBScript",
+    "description": "VBScript Language Support",
+    "version": "0.5.1",
+    "publisher": "karb0f0s",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/karb0f0s/vscode-vbscript.git"
+    },
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "categories": [
+        "Languages",
+        "Snippets"
     ],
-    "grammars": [
-      {
-        "language": "vbs",
-        "scopeName": "source.vbs",
-        "path": "./syntaxes/vbs.tmLanguage.json"
-      }
-    ],
-    "snippets": [
-      {
-        "language": "vbs",
-        "path": "./snippets/vbs.json"
-      }
-    ]
-	}
+    "contributes": {
+        "languages": [
+            {
+                "id": "vbs",
+                "aliases": [
+                    "VBScript",
+                    "vbs"
+                ],
+                "extensions": [
+                    ".vbs",
+                    ".vba",
+                    ".bas",
+                    ".vbe",
+                    ".wsf",
+                    ".wsc",
+                    ".acm",
+                    ".acr",
+                    ".acf"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "vbs",
+                "scopeName": "source.vbs",
+                "path": "./syntaxes/vbs.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "vbs",
+                "path": "./snippets/vbs.json"
+            }
+        ]
+    }
 }
