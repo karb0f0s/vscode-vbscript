@@ -2,7 +2,7 @@
     "name": "vbscript",
     "displayName": "VBScript",
     "description": "VBScript Language Support",
-    "version": "0.5.1",
+    "version": "0.5.2",
     "publisher": "karb0f0s",
     "repository": {
         "type": "git",

@@ -68,7 +68,7 @@
     },
     {
       "name": "meta.support.function.vbs",
-      "match": "(?i)\\.\\b(Quit|RemoveNetworkDrive|MapNetworkDrive|Sleep|Open|Close|Send|SetRequestHeader|NotifyProgress|SetResult|GetDB|Echo|EnumKey|WriteLine|Execute|MoveFirst|MoveNext|Lock|Unlock|SetAbort|SetComplete|BianryRead|AddHeader|AppendToLog|BinaryWrite|Clear|End|Flush|Redirect|Write|CreateObject|HTMLEncode|MapPath|URLEncode|Abandon)\\b",
+      "match": "(?i)\\.\\b(AddWindowsPrinterConnection|SetDefaultPrinter|LogMessage|Quit|RemoveNetworkDrive|MapNetworkDrive|Sleep|Open|Close|Send|SetRequestHeader|NotifyProgress|SetResult|GetDB|Echo|EnumValues|EnumKey|WriteLine|Execute|MoveFirst|MoveNext|Lock|Unlock|SetAbort|SetComplete|BianryRead|AddHeader|AppendToLog|BinaryWrite|Clear|End|Flush|Redirect|Write|CreateObject|HTMLEncode|MapPath|URLEncode|Abandon)\\b",
       "captures": {
         "1": {
           "name": "support.function.vbs"
