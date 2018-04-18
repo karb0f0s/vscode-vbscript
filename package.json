@@ -4,6 +4,10 @@
   "description": "VBScript Language Support",
   "version": "0.5.0",
   "publisher": "karb0f0s",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karb0f0s/vscode-vbscript.git"
+  },
   "engines": {
     "vscode": "^1.14.0"
   },
