@@ -2,9 +2,10 @@
     "name": "vbscript",
     "displayName": "VBScript",
     "description": "VBScript Language Support",
-    "version": "0.5.3",
+    "version": "0.5.5",
     "publisher": "karb0f0s",
     "license": "MIT",
+    "icon": "resources/vbs.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/karb0f0s/vscode-vbscript.git"
