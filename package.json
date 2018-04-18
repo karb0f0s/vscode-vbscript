@@ -2,18 +2,28 @@
     "name": "vbscript",
     "displayName": "VBScript",
     "description": "VBScript Language Support",
-    "version": "0.5.2",
+    "version": "0.5.3",
     "publisher": "karb0f0s",
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "https://github.com/karb0f0s/vscode-vbscript.git"
     },
+    "bugs": {
+        "url": "https://github.com/karb0f0s/vscode-vbscript/issues"
+    },
+    "homepage": "https://github.com/karb0f0s/vscode-vbscript/blob/master/README.md",
     "engines": {
         "vscode": "^1.14.0"
     },
     "categories": [
         "Languages",
         "Snippets"
+    ],
+    "keywords": [
+        "VBS",
+        "VBScript",
+        "Language"
     ],
     "contributes": {
         "languages": [
