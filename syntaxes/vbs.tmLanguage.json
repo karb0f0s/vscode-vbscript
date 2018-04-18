@@ -1,0 +1,187 @@
+{
+  "comment": "based on asp textmate bundle by Rich Barton",
+  "fileTypes": ["asp","vbs","vb","vba","bas","frm","cls"],
+  "name": "VBScript",
+  "patterns": [    
+    {
+      "begin": "(^\\s+)?(?=\\')",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.whitespace.comment.leading.vbs"
+        }
+      },
+      "end": "(?!\\G)",
+      "patterns": [
+        {
+          "name": "comment.line.apostrophe.vbs",
+          "begin": "\\'",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.vbs"
+            }
+          },
+          "end": "\\n"
+        }
+      ]
+    },
+    {
+      "begin": "(^\\s+)?(?=REM )",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.whitespace.comment.leading.vbs"
+        }
+      },
+      "end": "(?!\\G)",
+      "patterns": [
+        {
+          "name": "comment.line.rem.vbs",
+          "begin": "REM ",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.vbs"
+            }
+          },
+          "end": "\\n"
+        }
+      ]
+    },
+    {
+      "name": "keyword.control.vbs",
+      "match": "(?i)\\b(On\\s+Error\\s+(Resume\\s+Next|GoTo)|If|Then|Else(If)?|While|Wend|For|To|Each|In|Step|Case|Select|Return|Continue|Do|Until|Loop|Next|With|Exit(\\s+(Do|For|Function|Sub|Property))?|End(\\s+(Select|If|Function|Sub))?|Option\\s+Explicit)\\b"
+    },
+    {
+      "name": "support.class.vbs",
+      "match": "(?i)\\b(Application|ObjectContext|Request|Response|Server|Session)\\b"
+    },
+    {
+      "name": "support.class.collection.vbs",
+      "match": "(?i)\\b(Contents|StaticObjects|ClientCertificate|Cookies|Form|QueryString|ServerVariables)\\b"
+    },
+    {
+      "name": "meta.support.constant.vbs",
+      "match": "(?i)\\.\\b(TotalBytes|Buffer|CacheControl|Charset|ContentType|Expires|ExpiresAbsolute|IsClientConnected|PICS|Status|ScriptTimeout|CodePage|LCID|SessionID|Timeout)\\b",
+      "captures": {
+        "1": {
+          "name": "support.constant.vbs"
+        }
+      }
+    },
+    {
+      "name": "meta.support.function.vbs",
+      "match": "(?i)\\.\\b(Quit|RemoveNetworkDrive|MapNetworkDrive|Sleep|Open|Close|Send|SetRequestHeader|NotifyProgress|SetResult|GetDB|Echo|EnumKey|WriteLine|Execute|MoveFirst|MoveNext|Lock|Unlock|SetAbort|SetComplete|BianryRead|AddHeader|AppendToLog|BinaryWrite|Clear|End|Flush|Redirect|Write|CreateObject|HTMLEncode|MapPath|URLEncode|Abandon)\\b",
+      "captures": {
+        "1": {
+          "name": "support.function.vbs"
+        }
+      }
+    },
+    {
+      "name": "support.function.event.vbs",
+      "match": "(?i)\\b(Application_OnEnd|Application_OnStart|OnTransactionAbort|OnTransactionCommit|Session_OnEnd|Session_OnStart|Class_Initialize|Class_Terminate)\\b"
+    },
+    {
+      "name": "support.function.vb.vbs",
+      "match": "(?i)\\b(Array|Add|Asc|Atn|CBool|CByte|CCur|CDate|CDbl|Chr|CInt|CLng|Conversions|Cos|CreateObject|CSng|CStr|Date|DateAdd|DateDiff|DatePart|DateSerial|DateValue|Day|Derived|Math|Escape|Eval|Exists|Exp|Filter|FormatCurrency|FormatDateTime|FormatNumber|FormatPercent|GetLocale|GetObject|GetRef|Hex|Hour|InputBox|InStr|InStrRev|Int|Fix|IsArray|IsDate|IsEmpty|IsNull|IsNumeric|IsObject|Item|Items|Join|Keys|LBound|LCase|Left|Len|LoadPicture|Log|LTrim|RTrim|Trim|Maths|Mid|Minute|Month|MonthName|MsgBox|Now|Oct|Remove|RemoveAll|Replace|RGB|Right|Rnd|Round|ScriptEngine|ScriptEngineBuildVersion|ScriptEngineMajorVersion|ScriptEngineMinorVersion|Second|SetLocale|Sgn|Sin|Space|Split|Sqr|StrComp|String|StrReverse|Tan|Time|Timer|TimeSerial|TimeValue|TypeName|UBound|UCase|Unescape|VarType|Weekday|WeekdayName|Year|Integer|Object|Variant|Long)\\b"
+    },
+    {
+      "name": "support.constant.vb.vbs",
+      "match": "(?i)\\b(vbtrue|vbfalse|vbcr|vbcrlf|vbformfeed|vblf|vbnewline|vbnullchar|vbnullstring|vbtab|vbverticaltab|vbbinarycompare|vbtextcomparevbsunday|vbmonday|vbtuesday|vbwednesday|vbthursday|vbfriday|vbsaturday|vbusesystemdayofweek|vbfirstjan1|vbfirstfourdays|vbfirstfullweek|vbgeneraldate|vblongdate|vbshortdate|vblongtime|vbshorttime|vbobjecterror|vbEmpty|vbNull|vbInteger|vbLong|vbSingle|vbDouble|vbCurrency|vbDate|vbString|vbObject|vbError|vbBoolean|vbVariant|vbDataObject|vbDecimal|vbByte|vbArray)\\b"
+    },
+    {
+      "name": "support.variable.vbs",
+      "match": "(?i)\\b(Err|Wscript|Context)\\b"
+    },
+    {
+      "name": "constant.numeric.vbs",
+      "match": "(?i)(&h[0-9]+|\\b(\\d+|\\.?\\d+(e[\\+|-]?\\d+)?(l|ul|u|f)?\\b))"
+    },
+    {
+      "name": "keyword.operator.vbs",
+      "match": "(?i)[><\\+\\-\\*\\^&_=/]|\\b(Mod|And|Not|Or|Xor|Is)\\b"
+    },
+    {
+      "name": "storage.type.vbs",
+      "match": "(?i)\\b(Call|Class|Const|Dim|Redim|Function|Sub|Property|Set|Let|Get|New|Randomize|As)\\b"
+    },
+    {
+      "name": "storage.modifier.vbs",
+      "match": "(?i)\\b(Private|Public|Default|ByVal|ByRef)\\b"
+    },
+    {
+      "name": "constant.language.vbs",
+      "match": "(?i)\\b(Empty|False|Nothing|Null|True)\\b"
+    },
+    {
+      "name": "string.quoted.double.vbs",
+      "begin": "\"",
+      "end": "\"",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin.vbs"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end.vbs"
+        }
+      },
+      "patterns": [{
+        "name": "constant.character.escape.apostrophe.vbs",
+        "match": "\"\""
+      }]
+    },
+    {
+      "name": "meta.function.call.vbs",
+      "match": "(?i)\\b\\.?([_a-z]\\w*)\\s*\\(",
+      "captures": {
+        "1": {
+          "name": "entity.name.function.vbs"
+        }
+      }
+    },
+    {
+      "name": "meta.variable.other.vbs",
+      "match": "(?i)\\.([_a-z]\\w*)",
+      "captures": {
+        "1": {
+          "name": "support.variable.other.vbs"
+        }
+      }
+    },
+    {
+      "name": "meta.function.vbs",
+      "match": "(?i)^\\s*(function|sub)\\s*([_a-z]\\w*)\\s*(\\()([^)]*)(\\)).*\\n?",
+      "captures": {
+        "1": {
+          "name": "storage.type.function.vbs"
+        },
+        "2": {
+          "name": "entity.name.function.vbs"
+        },
+        "3": {
+          "name": "punctuation.definition.parameters.vbs"
+        },
+        "4": {
+          "name": "variable.parameter.function.vbs"
+        },
+        "5": {
+          "name": "punctuation.definition.parameters.vbs"
+        }
+      }
+    },    
+    {
+      "name": "variable.other.vbs",
+      "match": "(?i)\\b([_a-z\\x7f-\\xff][\\w\\x7f-\\xff]*?)\\b",
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.variable.vbs"
+        }
+      }
+    },
+    {
+      "name": "constant.caps.vbs",
+      "match": "(?-i)\\b[A-Z_]+\\b"
+    }
+  ],
+  "scopeName": "source.vbs"
+}

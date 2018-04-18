@@ -1,0 +1,30 @@
+{
+    "comments": {
+        // symbol used for single line comment. Remove this entry if your language does not support line comments
+        "lineComment": "'",
+    },
+    // symbols used as brackets
+    "brackets": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"]
+    ],
+    // symbols that are auto closed when typing
+    "autoClosingPairs": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["\"", "\""]
+    ],
+    // symbols that that can be used to surround a selection
+    "surroundingPairs": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["\"", "\""]
+    ],    
+    "indentationRules": {
+        "increaseIndentPattern": "^\\s*(\\b([Cc]lass|[Ee]lse([Ii]f)?|[Ff]or|[Ss]elect|[Cc]ase)\\b|\\b([Ii]f)\\b.*\\b([Tt]hen)\\s*$|(([Pp]ublic|[Pp]rivate)\\s*([Dd]efault)?\\s*([Pp]roperty|[Ss]ub|[Ff]unction)))\\b.*$",
+        "decreaseIndentPattern": "^\\s*([Ee]nd|[Ee]lse([Ii]f)?|[Cc]ase|[Nn]ext|[Ll]oop)\\b"
+    }
+}
